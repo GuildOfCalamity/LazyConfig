@@ -22,6 +22,7 @@
 ```csharp
 
     /** Samples **/
+    static LazyConfig? _config = null;
 
     // Make sure salt is consistent across machines (and obfuscated)
     string temp = Convert.ToBase64String("f94aaa0dacf2454fb0b8ab2aa8ec1465".ToByteArray());
